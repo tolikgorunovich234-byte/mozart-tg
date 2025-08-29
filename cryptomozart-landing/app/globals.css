@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html, body, #__next { height: 100%; }
+body {
+  @apply bg-base-bg text-base-text antialiased;
+  background-image: theme('backgroundImage.heroGradient'), theme('backgroundImage.grid');
+  background-size: cover, 20px 20px;
+  background-position: center, top left;
+}
+
+.glow { box-shadow: theme('boxShadow.glow'); }
+.hr { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent); }
